@@ -1,0 +1,15 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Dataset</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding text-center>
+    <p>Number of images in dataset: {{data.nOfImages}}</p>
+    <p>Free disk space: {{data.freeDisk}}</p>
+    <button *ngIf="!isAddingData" ion-button (click)="GetImages()">Get More Tinder Images</button>
+    <img class="profile-pic" src="{{currentImg}}" alt="">
+</ion-content>
